@@ -18,13 +18,15 @@ const { width, height } = Dimensions.get("window");
 export default class App extends React.Component {
   state = {
     newToDo: "",
-    loadedToDos: false
+    loadedToDos: false,
+    toDos: {}
   };
   componentDidMount = () => {
     this._loadToDos();
   };
   render() {
-    const { newToDo, loadedToDos } = this.state;
+    const { newToDo, loadedToDos, toDos } = this.state;
+    console.log(toDos);
     if (!loadedToDos) {
       return <AppLoading />;
     }
