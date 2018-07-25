@@ -29,11 +29,7 @@ export default class App extends React.Component {
     const { newToDo, loadedToDos, toDos } = this.state;
     console.log(toDos);
     if (!loadedToDos) {
-      return (
-        <AppLoading>
-          <StatusBar barStyle="light-content" />
-        </AppLoading>
-      );
+      return <AppLoading />;
     }
     return (
       <View style={styles.container}>
