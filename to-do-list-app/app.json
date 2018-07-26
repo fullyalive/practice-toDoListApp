@@ -21,7 +21,7 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "co.fullyalive.welist"
     },
     "android": {
       "package": "co.fullyalive.welist"
